@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Best Bikes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="images/logo.png" alt="logo" class="logo">
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+             <h2>THE BMW</h2>
+             <h1>G 310</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque soluta aliquid odit, 
+                doloribus architecto fugiat facilis consectetur necessitatibus nulla.
+            </p>
+            <h3>Choose your color</h3>
+            <div class="color-select">
+                <div id="red"></div>
+                <div id="blue"></div>
+                <div id="black"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let redBtn= document.getElementById('red');
+        let blueBtn= document.getElementById('blue');
+        let blackBtn= document.getElementById('black');
+        let bike= document.getElementById('bike');
+
+        redBtn.onclick= function(){
+            bike.style.backgroundImage='url(images/BMW1.png)';
+        }
+        blueBtn.onclick= function(){
+            bike.style.backgroundImage='url(images/BMW2.png)';
+        }
+        blackBtn.onclick= function(){
+            bike.style.backgroundImage='url(images/BMW3.png)';
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
